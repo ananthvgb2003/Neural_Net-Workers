@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Box</title>
+  <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      
+      body {
+        background: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(216, 68, 148) 103.3%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .login-box {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-box label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    .login-box button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+  
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+ 
+    if (username === 'admin' && password === 'admin') {
+
+      window.location.href = 'main.html';
+    } else {
+   
+      alert('Login failed. Please check your credentials.');
+    }
+  });
+</script>
+
+</body>
+</html>

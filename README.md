@@ -1,3 +1,5 @@
+![Screenshot 2024-01-05 005554 (1)](https://github.com/ananthvgb2003/Neural_Net-Workers/assets/120911455/407499c1-000f-4060-abda-5827a4b1f6e5)
+
 # Sentiment Analysis using Audio
 
 Transforming audio into dynamic pitches, our innovative tool analyzes speaker emotions, crafting personalized narratives that resonate. Your voice, your emotion, your cause – perfectly pitched.

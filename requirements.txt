@@ -1,0 +1,5 @@
+uvicorn
+ctransformers
+langchain
+python-box
+streamlit
